@@ -1,13 +1,33 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <nav>
+      <span class="box-search">
+        <input
+          type="search"
+          id="get-search"
+          placeholder="Digite o nome da cidade."
+        />
+        <button onclick="PegaClima()" type="button">
+          <img src="/public/Search.svg" alt="Icon-search" />
+        </button>
+      </span>
+    </nav>
+    <div class="box">
+      <img id="icon" width="100" />
+      <ul>
+        <li id="city"></li>
+        <li id="temp"></li>
+        <li id="description"></li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

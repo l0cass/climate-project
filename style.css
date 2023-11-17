@@ -3,6 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  color: #eff3f8;
+  background-color: #101010;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,4 +16,53 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+nav {
+  padding: 1.5vw 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+}
+
+.box-search {
+  display: flex;
+}
+
+input,
+button {
+  padding: 10px;
+  color: #eff3f8;
+  background-color: #303030;
+  border: none;
+}
+
+input {
+  border-radius: 15px 0 0 15px;
+}
+button {
+  border-radius: 0 15px 15px 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  text-transform: capitalize;
+}
+
+ul li:nth-child(1) {
+  font-size: 2rem;
 }
