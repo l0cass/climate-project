@@ -1,7 +1,9 @@
+require("dotenv").config()
+
 function PegaClima(){
   const getCity = document.getElementById('get-search').value;
 
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + getCity + '&appid=' + '5bc9ea16c178f7abee2dc61e941fe8f0' + '&lang=pt_br' + '&units=metric')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + getCity + '&appid=' + process.env.API_KEY + '&lang=pt_br' + '&units=metric')
   .then(response => response.json())
   .then(data => {    
     const cityName = data.name;
