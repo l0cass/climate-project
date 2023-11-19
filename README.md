@@ -32,20 +32,6 @@ Antes de começar, certifique-se de ter uma chave de API válida da OpenWeatherM
    API_KEY=SuaChaveAqui
    ```
 
-### Instalação
-
-1. Instale as dependências do projeto.
-
-   ```bash
-   npm install
-   ```
-
-2. Inicie o servidor.
-
-   ```bash
-   npm start
-   ```
-
 ## Contribuições
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver uma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
